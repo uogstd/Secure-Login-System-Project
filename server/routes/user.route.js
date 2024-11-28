@@ -1,7 +1,8 @@
 import express from "express";
 const router = express.Router();
-import { test } from "../controllers/user.controller.js";
+import { signOut, test } from "../controllers/user.controller.js";
 
 router.get("/test", test);
+router.post("/signout", signOut);
 
 export default router;
